@@ -11,8 +11,9 @@
 	<bean id="employee" class="com.spring.demo.EmployeeBean"
 		autowire="byName">
 		<property name="fullName" value="Aneesh Potnis" />
+		<property name="departmentBean" ref="departmentBean1"></property>
 	</bean>
-	<bean id="departmentBean" class="com.spring.demo.DepartmentBean"
+	<bean id="departmentBean1" class="com.spring.demo.DepartmentBean"
 		autowire="byName">
 		<property name="name" value="Human Resource" />
 	</bean>
